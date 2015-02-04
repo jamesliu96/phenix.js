@@ -122,7 +122,6 @@
 
 	Phenix.hide = function(callback) {
 		var element = Phenix.element;
-		var opacity = 0;
 		_DOMdestroy(element);
 		(typeof callback === "function") && callback();
 		return Phenix;
