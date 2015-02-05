@@ -9,8 +9,8 @@
  *
  * // DEMO
  * Phenix.init({
- *     width: $width.value,
- *     height: $height.value,
+ *     width: 500,
+ *     height: 300,
  *     template: "info",
  *     data: {
  *         color: "#36b14a",
@@ -67,8 +67,10 @@
 		height: 300,
 		template: "info",
 		data: {
+			color: "#36b14a",
 			face: ":)",
-			title: "Welcome to Phenix"
+			title: "Welcome to Phenix",
+			description: "Copyright (C) 2015 James Liu"
 		}
 	};
 	Phenix.defaults.style = {
@@ -90,7 +92,7 @@
 	};
 
 	Phenix.templates = {};
-	Phenix.templates.info = '<div style="font-size:60px;font-family:\'Microsoft YaHei\',\'Helvetica Neue\',Helvetica,Arial,sans-serif;padding:10px 0;color:{{color}};">{{face}}</div><div style="font-size:18px;font-family:\'Microsoft YaHei\',\'Helvetica Neue\',Helvetica,Arial,sans-serif;padding:10px 0;">{{title}}</div>';
+	Phenix.templates.info = '<div style="font-size:60px;font-family:\'Microsoft YaHei\',\'Helvetica Neue\',Helvetica,Arial,sans-serif;padding:10px 0;color:{{color}};">{{face}}</div><div style="font-size:18px;font-family:\'Microsoft YaHei\',\'Helvetica Neue\',Helvetica,Arial,sans-serif;padding:10px 0;">{{title}}</div><div style="font-size:12px;font-family:\'Microsoft YaHei\',\'Helvetica Neue\',Helvetica,Arial,sans-serif;padding:10px 0;color:#b9b9bd;">{{description}}</div>';
 
 	var _substitute = function(template, data) {
 		for (var i in data) {
