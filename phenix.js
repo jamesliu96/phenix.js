@@ -97,9 +97,9 @@
 	var _substitute = function(template, data) {
 		for (var i in data) {
 			var regexp = new RegExp("\{\{" + i + "\}\}", 'g');
-	        template = template.replace(regexp, data[i] || "Phenix", 'g');
-	    }
-	    return template;
+			template = template.replace(regexp, data[i] || "Phenix", 'g');
+		}
+		return template;
 	};
 
 	var _opacity = function(opacity) {
