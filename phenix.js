@@ -15,7 +15,8 @@
  *     data: {
  *         color: "#36b14a",
  *         face: ":)",
- *         title: "LOL"
+ *         title: "LOL",
+ *         description: "LMAO"
  *     }
  * }).show();
  *
